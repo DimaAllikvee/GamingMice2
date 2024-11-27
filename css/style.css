@@ -4,14 +4,28 @@
 }
 
 .header h1 {
-    letter-spacing: 15px;
-    font-size: 300%;
+    letter-spacing: 10px; /* Уменьшение расстояния между буквами для визуального улучшения */
+    font-size: 400%; /* Увеличение размера шрифта */
+    margin: 20px 0; /* Добавление отступов сверху и снизу */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр для выразительности */
 }
 
 .header p {
     color: white !important;
-    font-size: 90%;
-    letter-spacing: 3px;
+    font-size: 110%; /* Увеличение размера описания */
+    letter-spacing: 4px; /* Увеличение расстояния между буквами */
+}
+
+.navbar-brand {
+    font-size: 150%; /* Увеличение шрифта логотипа */
+    font-weight: bold; /* Жирный шрифт для логотипа */
+    text-transform: uppercase; /* Преобразование текста логотипа в верхний регистр */
+    letter-spacing: 3px; /* Расстояние между буквами логотипа */
+    color: #f0ad4e !important; /* Цвет логотипа */
+}
+
+.navbar-brand:hover {
+    color: #e69538 !important; /* Цвет логотипа при наведении */
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
@@ -47,7 +61,10 @@
     }
 
     .header {
-        text-align: center;
+        padding: 40px 0; /* Увеличение отступов в header */
+        text-align: center; /* Центрирование текста */
+        background-color: #222; /* Фон для header */
+        border-bottom: 3px solid #f0ad4e; /* Нижняя граница для выделения */
     }
 }
 
@@ -66,25 +83,38 @@ html, body {
 
 .films_block {
     text-align: center;
+    border: 2px solid #dad7d5; /* Добавлена рамка вокруг всего блока */
+    border-radius: 10px; /* Закруглённые углы для блока */
+    padding: 10px; /* Внутренний отступ для блока */
+    margin-bottom: 15px; /* Отступ между блоками */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.films_block:hover {
+    transform: scale(1.05); /* Лёгкое увеличение блока при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Тень при наведении */
 }
 
 .films_block img {
-    margin-bottom: 5%;
-    border-radius: 5px;
-    border: solid 5px #dad7d5;
-    width: 100%;
+    margin-bottom: 10px; /* Отступ между изображением и текстом */
+    border-radius: 5px; /* Закругление только для изображения */
+    border: solid 2px #dad7d5; /* Рамка для изображения */
+    width: 100%; /* Ширина изображения */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .films_block img:hover {
-    transform: scale(1.05); /* Лёгкое увеличение при наведении */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Добавление тени */
+    transform: scale(1.08); /* Лёгкое увеличение изображения при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Глубокая тень для изображения при наведении */
 }
 
 .film_label {
-    padding: 2%;
-    margin-bottom: 4%;
+    padding: 5px 0;
+    margin-bottom: 4px;
+    font-weight: bold; /* Сделать текст жирным */
+    color: #333; /* Цвет текста */
 }
+
 
 .margin-8 {
     margin-top: 8%;
