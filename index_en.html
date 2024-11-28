@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MiceBase Bootstrap</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Main Style -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -15,184 +15,151 @@
 
 <header class="container-fluid">
     <div class="row">
-        <nav role="navigation" class="navbar navbar-inverse">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <div class="navbar-header header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h1><a href="index_en.html">MiceBase</a></h1>
-                                <p>Devices for your comfort!</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+                <a class="navbar-brand" href="index_en.html">MiceBase</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
-                    <ul class="nav nav-pills">
-                        <li class="active"> <a href="index_en.html">Home</a> </li>
-                        <li> <a href="mouses_en.html">Mice</a> </li>
-                        <li> <a href="keyboards_en.html">Keyboards</a> </li>
-                        <li> <a href="rating_devices_en.html">Device Ratings</a> </li>
-                        <li> <a href="contact_en.html">Contact</a> </li>
-                        <li> <a href="index.html">Русский</a> </li>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index_en.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mouses_en.html">Mice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="keyboards_en.html">Keyboards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rating_devices_en.html">Device Ratings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_en.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Русский</a>
+                        </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </div>
 </header>
 
-
 <main class="wrapper">
     <div class="container">
         <div class="row">
-            <section class="col-lg-9 col-lg-push-3">
-                <form role="search" class="visible-xs">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="search" class="form-control input-lg" placeholder="Your query">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                            </div>
-                        </div>
+            <!-- Основной контент -->
+            <section class="col-lg-9 order-lg-2">
+                <form role="search" class="d-block d-lg-none mb-3">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Your query">
+                        <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
                     </div>
                 </form>
 
                 <h2>New Mice</h2>
                 <hr>
                 <div class="row">
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_mouse1_en.html"><img src="assets/img/1-za13-dw-top.png" alt="ZA-13-DW"></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_mouse1_en.html"><img src="assets/img/1-za13-dw-top.png" class="img-fluid rounded" alt="ZA-13-DW"></a>
                         <div class="film_label"><a href="show_mouse1_en.html">ZA-13-DW</a></div>
                     </article>
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_mouse2_en.html"><img src="assets/img/202630-logitech-g-pro-wirelsss-m.png" alt="Logitech G Pro X Superlight"></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_mouse2_en.html"><img src="assets/img/202630-logitech-g-pro-wirelsss-m.png" class="img-fluid rounded" alt="Logitech G Pro X Superlight"></a>
                         <div class="film_label"><a href="show_mouse2_en.html">Logitech G Pro X Superlight</a></div>
                     </article>
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_mouse3_en.html"><img src="assets/img/wireless-razer-viper-v3-pro-blac.png" alt="Viper-V3"></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_mouse3_en.html"><img src="assets/img/wireless-razer-viper-v3-pro-blac.png" class="img-fluid rounded" alt="Viper-V3"></a>
                         <div class="film_label"><a href="show_mouse3_en.html">Viper-V3</a></div>
                     </article>
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_mouse4_en.html"><img src="assets/img/manguhiir-vgn-dragonfly-f1-pro-m.png" alt="Dragonfly F1 PRO"></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_mouse4_en.html"><img src="assets/img/manguhiir-vgn-dragonfly-f1-pro-m.png" class="img-fluid rounded" alt="Dragonfly F1 PRO"></a>
                         <div class="film_label"><a href="show_mouse4_en.html">Dragonfly F1 PRO</a></div>
                     </article>
                 </div>
 
-                <div class="margin-8"></div>
-
-                <h2>New Keyboards</h2>
+                <h2 class="mt-5">New Keyboards</h2>
                 <hr>
                 <div class="row">
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_keyboard1_en.html"><img src="assets/img/30.png" alt=""></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_keyboard1_en.html"><img src="assets/img/30.png" class="img-fluid rounded" alt=""></a>
                         <div class="film_label"><a href="show_keyboard1_en.html">Project Keyboard</a></div>
                     </article>
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_keyboard2_en.html"><img src="assets/img/DPP 87 Ink.png" alt=""></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_keyboard2_en.html"><img src="assets/img/DPP 87 Ink.png" class="img-fluid rounded" alt=""></a>
                         <div class="film_label"><a href="show_keyboard2_en.html">DPP 87 Ink</a></div>
                     </article>
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_keyboard3_en.html"><img src="assets/img/Keyboards  DPO 87 Violet Horizons.png" alt=""></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_keyboard3_en.html"><img src="assets/img/Keyboards  DPO 87 Violet Horizons.png" class="img-fluid rounded" alt=""></a>
                         <div class="film_label"><a href="show_keyboard3_en.html">DPO 87 Violet Horizons</a></div>
                     </article>
-                    <article class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <a href="show_keyboard4_en.html"><img src="assets/img/WOOTING 60HE.png" alt=""></a>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+                        <a href="show_keyboard4_en.html"><img src="assets/img/WOOTING 60HE.png" class="img-fluid rounded" alt=""></a>
                         <div class="film_label"><a href="show_keyboard4_en.html">WOOTING 60HE</a></div>
                     </article>
                 </div>
-
-                <div class="margin-8"></div>
-
-                <article>
-                    <h3><a href="show_mouse1_en.html">Review of Dragonfly F1 PRO</a></h3>
-                    <p>
-                        The new Dragonfly F1 PRO model offers a perfect blend of design and functionality. High precision and light weight make it a great choice for gamers.
-                    </p>
-                    <a href="#" class="btn btn-warning pull-right">read</a>
-                </article>
-
-                <div class="margin-8 clear"></div>
-
-                <article>
-                    <h3>Lightweight Logitech Mice for Productivity</h3>
-                    <p>
-                        Logitech G Pro X Superlight - an excellent mouse for those who value minimal weight and high performance.
-                    </p>
-                    <a href="#" class="btn btn-warning pull-right">read</a>
-                </article>
-
-                <div class="margin-8 clear"></div>
             </section>
 
-            <aside class="col-lg-3 col-lg-pull-9">
-                <div class="panel panel-info hidden-xs">
-                    <div class="panel-heading"><div class="sidebar-header">Search</div></div>
-                    <div class="panel-body">
-                        <form role="search">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="search" class="form-control input-lg" placeholder="Your query">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                    </div>
-                                </div>
+            <!-- Сайдбар -->
+            <aside class="col-lg-3 order-lg-1">
+                <!-- Search -->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Your query">
+                                <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
                             </div>
                         </form>
                     </div>
                 </div>
 
-                <div class="panel panel-info">
-                    <div class="panel-heading"><div class="sidebar-header">Login</div></div>
-                    <div class="panel-body">
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control input-lg" placeholder="Username">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control input-lg" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-warning pull-right">login</button>
+                <!-- Login -->
+                <div class="card mb-4">
+                    <div class="card-header">Login</div>
+                    <div class="card-body">
+                        <form>
+                            <input type="text" class="form-control mb-2" placeholder="Username">
+                            <input type="password" class="form-control mb-2" placeholder="Password">
+                            <button type="submit" class="btn btn-warning w-100">Login</button>
                         </form>
                     </div>
                 </div>
 
-                <div class="panel panel-info">
-                    <div class="panel-heading"><div class="sidebar-header">News</div></div>
-                    <div class="panel-body">
+                <!-- News -->
+                <div class="card mb-4">
+                    <div class="card-header">News</div>
+                    <div class="card-body">
                         <p>We launched a new service</p>
                         <p>31.02.2017</p>
                     </div>
                 </div>
 
-                <div class="panel panel-info">
-                    <div class="panel-heading"><div class="sidebar-header">Device Ratings</div></div>
-                    <div class="panel-body">
+                <!-- Device Ratings -->
+                <div class="card mb-4">
+                    <div class="card-header">Device Ratings</div>
+                    <div class="card-body">
                         <ul class="list-group">
-                            <li class="list-group-item list-group-warning">
-                                <span class="badge">8.9</span>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <a href="show_mouse1_en.html">ZA-13-DW</a>
+                                <span class="badge bg-primary rounded-pill">8.9</span>
                             </li>
-                            <li class="list-group-item list-group-warning">
-                                <span class="badge">8.7</span>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <a href="show_mouse2_en.html">Logitech G Pro X</a>
+                                <span class="badge bg-primary rounded-pill">8.7</span>
                             </li>
-                            <li class="list-group-item list-group-warning">
-                                <span class="badge">8.3</span>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <a href="show_mouse3_en.html">Viper-V3</a>
+                                <span class="badge bg-primary rounded-pill">8.3</span>
                             </li>
-                            <li class="list-group-item list-group-warning">
-                                <span class="badge">8.1</span>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <a href="show_mouse4_en.html">Dragonfly F1 PRO</a>
+                                <span class="badge bg-primary rounded-pill">8.1</span>
                             </li>
                         </ul>
                     </div>
@@ -202,15 +169,14 @@
     </div>
 </main>
 
-<footer>
-    <div class="container">
-        <p class="text-center"> <a href="index_en.html">MiceBase</a> </p>
+<footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+        <a href="index_en.html" class="text-white">MiceBase</a>
     </div>
 </footer>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

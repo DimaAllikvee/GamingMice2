@@ -1,6 +1,8 @@
-.header a, a:hover {
-    color: #f0ad4e;
-    text-decoration: none;
+.header a:hover {
+    color: #f0ad4e; /* Изменение цвета при наведении */
+    text-decoration: none; /* Убрать подчеркивание */
+    transform: scale(1.1); /* Лёгкое увеличение */
+    transition: transform 0.3s ease-in-out, color 0.3s ease; /* Плавный переход */
 }
 
 .header h1 {
@@ -37,9 +39,25 @@
     color: #fff;
 }
 
+
+
 .nav-pills>li>a:hover {
     background-color: #346270;
 }
+
+.nav-item a {
+    color: white; /* Исходный цвет текста */
+    text-decoration: none; /* Убрать подчеркивание */
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Плавный переход */
+}
+
+.nav-item a:hover {
+    color: #f0ad4e; /* Цвет при наведении */
+    transform: scale(1.0); /* Увеличение текста */
+    text-shadow: 0 4px 8px rgba(240, 173, 78, 0.6); /* Лёгкая тень текста */
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+
 
 .navbar-inverse {
     padding: 1%;
@@ -90,6 +108,17 @@ html, body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+.img-fluid:hover {
+    transform: scale(1.1); /* Увеличение размера */
+    transition: transform 0.3s ease-in-out; /* Плавный переход */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Добавление тени */
+}
+
+.film_label:hover {
+    transform: scale(1.05); /* Лёгкое увеличение блока при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+}
 .films_block:hover {
     transform: scale(1.05); /* Лёгкое увеличение блока при наведении */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Тень при наведении */
@@ -97,15 +126,15 @@ html, body {
 
 .films_block img {
     margin-bottom: 10px; /* Отступ между изображением и текстом */
-    border-radius: 5px; /* Закругление только для изображения */
-    border: solid 2px #dad7d5; /* Рамка для изображения */
-    width: 100%; /* Ширина изображения */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px; /* Закругление углов */
+    border: solid 2px #dad7d5; /* Рамка */
+    width: 100%; /* Адаптация ширины */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
 }
 
-.films_block img:hover {
-    transform: scale(1.08); /* Лёгкое увеличение изображения при наведении */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Глубокая тень для изображения при наведении */
+.films_block:hover img {
+    transform: scale(1.2); /* Увеличение изображения */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Добавление тени */
 }
 
 .film_label {
